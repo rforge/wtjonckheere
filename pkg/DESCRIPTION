@@ -1,0 +1,13 @@
+Package: wtJonckheere
+Type: Package
+Title: Non-parametric Jonckheere-Terpstra trend test on weighted data
+Version: 1.0
+Date: 2014-07-10
+Author: Who wrote it
+Maintainer: Andreas Recke <Andreas.Recke@gmx.de>
+Description: This package provides a simple mechanism to calculate the Jonckheere-Terpstra (JT)
+   statistic when data points are weighted. For each data point, multiple alternatives with different
+   weights can be given. The JT statistic is used for permutation testing.
+License: GPL-2
+Depends: Rcpp (>= 0.9.10)
+LinkingTo: Rcpp
