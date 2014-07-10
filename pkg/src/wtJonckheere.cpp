@@ -1,8 +1,8 @@
-#include "wtJonckheere.hpp"
+#include <Rcpp.h>
 
 // delivers a jonckheere terpstra statistic
 
-SEXP rcpp_wt_jonckheere(SEXP values, SEXP groups, SEXP weights)
+RcppExport SEXP rcpp_wt_jonckheere(SEXP values, SEXP groups, SEXP weights)
 {
     using namespace Rcpp ;
     
