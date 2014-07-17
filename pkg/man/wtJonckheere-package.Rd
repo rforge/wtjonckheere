@@ -3,11 +3,12 @@
 \alias{wtJonckheere}
 \docType{package}
 \title{
-What the package does (short line)
+  Non-parametric trend test with weighted data points
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+  The Jonckheere Terpstra test evaluates an trend of data point values between ordered groups.
+  This package extends this test procedure with the capability to associate weights
+  for individual data points. Weighted data points may be grouped together.
 }
 \details{
 \tabular{ll}{
@@ -15,7 +16,7 @@ Package: \tab wtJonckheere\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2014-07-10\cr
-License: \tab What license is it under?\cr
+License: \tab GPL-2\cr
 }
 ~~ An overview of how to use the package, including the most important ~~
 ~~ functions ~~
@@ -26,13 +27,24 @@ Andreas Recke
 Maintainer: Andreas Recke <Andreas.Recke@gmx.de>
 }
 \references{
-~~ Literature or other references for background information ~~
+    Mack, H. B. (1981)
+    K-sample rank tests for umbrella alternatives.
+    \emph{J. Amer. Statist. Ass.} \bold{76}, 175--181.
+
+    Jonckheere, A. R. (1954)
+    A distribution-free k-sample test against ordered alternatives.
+    \emph{Biometrica} \bold{41}, 133--145.
+
+    Terpstra, T. J. (1952)
+    The asymptotic normality and consistency of Kendall's test against trend, when ties are present in one ranking.
+    \emph{Indagationes Mathematicae} \bold{14}, 327-333.
 }
-\keyword{ package }
+\keyword{trend test}
+\keyword{non-parametric}
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+ \code{\link[clinfun]{jonckheere.test}}
+ \code{\link[ENMISC]{wtd.boxplot}}
 }
-\examples{
-%% ~~ simple examples of the most important functions ~~
-}
+% \examples{
+% %% ~~ simple examples of the most important functions ~~
+% }
